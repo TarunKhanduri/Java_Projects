@@ -37,7 +37,27 @@ class Statements{
 		else
 			System.out.println("x+y is greater than 10");
 		
-		char num=48;
-		System.out.println(num);
+		int num=2;
+//		Q=can we use char instead of int as num?
+//		ans= yes we can use char instead of int.It will consider the integer ASCII value
+		
+		switch(num) {
+		case 0:System.out.println("num=0");
+				break;
+		case 1:System.out.println("num=1");
+				break;
+		case 2:System.out.println("num=2");
+				break;
+		default:System.out.println("num="+num);
+		}
+	}
+	
+	void LoopStatements() {
+		
+		int sum=0;
+		for(int j=1;j<=10;j++)
+			sum+=j;
+		System.out.println("sum of 1st 10 natural number= "+sum);
+		
 	}
 }
