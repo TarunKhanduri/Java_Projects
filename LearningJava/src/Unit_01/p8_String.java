@@ -15,7 +15,7 @@ F3 - String Compare: Check if the strings are equal or not?
 
  * */
 
-public class P8_String {
+public class p8_String {
 
 	public static void main(String[] args) {
 

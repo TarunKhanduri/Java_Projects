@@ -9,7 +9,7 @@ import java.util.Scanner;
 	 d. When you pass 4 your program would print Not applicable 
  * */
 
-public class P7_SwitchStatement {
+public class p7_SwitchStatement {
 
 	public static void main(String[] args) {
 		
