@@ -5,7 +5,7 @@ Q10. WAP in Java Program To Survey Four Different Car Models For Four
 	Your job is to find out the total number of cars sold of each model in all
 	the cities. Use Array of objects or multiple objects of class name City.
  */
-public class Q10 {
+public class Q_10 {
 
 	public static void main(String[] args) {
 
