@@ -36,6 +36,5 @@ public class p11_Task02_ImportingAndPackagesInJava {
 		System.out.println(abs(6.3));
 		
 		p3_Task01_VariablesAndDataTypesInJava obj = new p3_Task01_VariablesAndDataTypesInJava();
-
 	}
 }

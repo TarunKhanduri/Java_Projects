@@ -91,20 +91,20 @@ public class p3_Task01_VariablesAndDataTypesInJava {
          System.out.println(j);
          
          
-        System.out.println(ABC.j);//static variable of class ABC
+        System.out.println(ABC2.j);//static variable of class ABC
         
-        ABC obj1 = new ABC();
+        ABC2 obj1 = new ABC2();
         System.out.println(obj1.i++);//instance variable of  class ABC
         System.out.println(obj1.i);
         
-        ABC obj2 = new ABC();
+        ABC2 obj2 = new ABC2();
         System.out.println(obj2.i);
         
         
-        System.out.println(ABC.j++);
-        System.out.println(ABC.j);
+        System.out.println(ABC2.j++);
+        System.out.println(ABC2.j);
         
-        ABC.typeconversionAndTypecasting();
+        ABC2.typeconversionAndTypecasting();
         
         
 	}
@@ -119,7 +119,7 @@ public class p3_Task01_VariablesAndDataTypesInJava {
 	
 	}
 }
-class ABC {
+class ABC2 {
 	static int j = 10;// class variable/static variable
 	int i = 10;// Instance variable
 	
