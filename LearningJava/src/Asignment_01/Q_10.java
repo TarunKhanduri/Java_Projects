@@ -9,10 +9,10 @@ public class Q_10 {
 
 	public static void main(String[] args) {
 
-		city Delhi=new city(100,230,350,480);
-		city Mumbai=new city(110,210,130,410);
-		city Chennai=new city(130,220,320,240);
-		city Kolkata=new city(140,260,8300,400);
+		Car Delhi=new Car(100,230,350,480);
+		Car Mumbai=new Car(110,210,130,410);
+		Car Chennai=new Car(130,220,320,240);
+		Car Kolkata=new Car(140,260,8300,400);
 		int m=Delhi.maruti+Mumbai.maruti+Chennai.maruti+Kolkata.maruti;
 		int z=Delhi.zen+Mumbai.zen+Chennai.zen+Kolkata.zen;
 		int w=Delhi.wagnor+Mumbai.wagnor+Chennai.wagnor+Kolkata.wagnor;
@@ -25,14 +25,14 @@ public class Q_10 {
 
 }
 
-class city
+class Car
 {
 	int maruti;
 	int zen;
 	int wagnor;
 	int sx;
 	
-	city(int maruti,int zen,int wagnor,int sx)
+	Car(int maruti,int zen,int wagnor,int sx)
 	{
 		this.maruti=maruti;
 		this.zen=zen;
