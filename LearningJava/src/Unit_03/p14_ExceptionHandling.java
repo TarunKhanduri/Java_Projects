@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class p14_ExceptionHandling {
 
 	public static void main(String[] args) {
-		ABC obj=new ABC();
+		Exceptions obj=new Exceptions();
 		int age=12;
 		
 		obj.arithmatic_exception();
@@ -24,11 +24,20 @@ public class p14_ExceptionHandling {
 		
 		obj.nullPointerException();
 		System.out.println();
+		
+		obj.useOfThrows2();
+		System.out.println();
+		
+		//obj.checkedAndUncheckedException();
+		
+		obj.manualExceptionThrow();
+		System.out.println();
+		
 	}
 
 }
 
-class ABC{
+class Exceptions{
 	
 	void arithmatic_exception()
 	{
@@ -163,16 +172,63 @@ class ABC{
 		}
 	}
 	
-//	void input_mismatch_exception2() throws Exception
-//	{
-//		//throws keyword= we can use either throws or try catch
-//		Scanner sc=new Scanner(System.in);
-//		int c=sc.nextInt();
-//		System.out.println(c);
-//		
-//		//		rest code
-//		System.out.println("done");
-//		sc.close();
+	void useOfThrows(int age) throws Exception
+	{
+		//throws keyword= we can use either throws or try catch
+		if(age<18)
+			throw new Exception();
+		else
+			System.out.println("allowed");
+//				rest code
+		System.out.println("done");
 
-//	}
+	}
+	
+	void useOfThrows2()
+	{
+		try {
+			useOfThrows(18);
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	void checkedAndUncheckedException() {
+		//unchecked exception or runtime exception
+		int x = 0;
+		int y = 10;
+		int z = y / x;
+
+		System.out.println(z);
+		
+		//checked or compile time exception 
+			useOfThrows(30);
+	}
+
+
+	private void check_index(int i) throws ManualException{
+		if(i<0 || i>5)
+			throw new ManualException();
+	
+		System.out.println("valid index");
+	}
+	void manualExceptionThrow() {
+		
+		try {
+			int arr[]= {1,2,3,4,5};
+			check_index(6);
+		} catch (ManualException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+}
+
+
+class ManualException extends Exception{
+	public String getMessage()
+	{
+		return "manual exception index out of bound";
+	}
 }
