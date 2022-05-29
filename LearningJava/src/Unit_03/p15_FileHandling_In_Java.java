@@ -19,7 +19,7 @@ public class p15_FileHandling_In_Java {
 
 	public static void main(String[] args) throws IOException {
 
-		ABCDEF obj = new ABCDEF();
+		File_operations obj = new File_operations();
 		obj.takeInputFromAFile();
 		obj.saveOutputIntoAFile();
 		obj.saveLogOfProgram();
@@ -28,7 +28,7 @@ public class p15_FileHandling_In_Java {
 
 }
 
-class ABCDEF {
+class File_operations {
 	
 	static int a = 10;
 
