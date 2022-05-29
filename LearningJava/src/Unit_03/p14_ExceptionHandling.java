@@ -203,7 +203,12 @@ class Exceptions{
 		System.out.println(z);
 		
 		//checked or compile time exception 
-			useOfThrows(30);
+			try {
+				useOfThrows(30);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	}
 
 
