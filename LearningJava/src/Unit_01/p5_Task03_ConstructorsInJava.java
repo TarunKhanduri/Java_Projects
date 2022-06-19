@@ -38,6 +38,7 @@ class ABC4 {
 	 */
 	
 	ABC4(){
+		System.out.println("inside constructor");
 		a = 10;
 	}
 	

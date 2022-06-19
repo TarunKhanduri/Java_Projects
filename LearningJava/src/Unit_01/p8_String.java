@@ -47,7 +47,7 @@ class QuestionsOnString {
 			}
 		}
 		if(f==0)
-			System.out.println("s is palindrome");
+			System.out.println(s+"is palindrome");
 		else
 			System.out.println("not palindrome");
 		
